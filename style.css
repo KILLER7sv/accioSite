@@ -123,11 +123,14 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 28px 18px 16px !important;
+    width: 35%;
     border: 1px solid #e2e2e2;
-    border-radius: 8px;
+    border-radius: 15px;
+    background-color: white;
 }
 .auth{
     align-items: center;
+    
 }
 .para{
     align-items: center;
@@ -171,7 +174,7 @@
     display: flex;
     flex: 1 1;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     height: max-content;
     justify-content: flex-start;
     margin-top: 24px !important;
@@ -180,12 +183,11 @@
     padding: 20px !important;
 }
 .name-field {
-    width: 100%;
+    width: 27vw;
     border: 1px solid #eeeeee;
     border-radius: 5px;
     padding-left: 10px !important;
     background-color: #f8f8f8;
-
 }
 .name-field input{
     border: none;
@@ -659,4 +661,30 @@
     font-size: 16px;
     color: #676767;
     height: fit-content;
+}
+
+.background-shadow {
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, auto);
+    z-index: -1;
+    filter: opacity(55%);
+}
+.color:first-child {
+    box-shadow: 0 0 115px hsla(3,100%,71%,.773);
+}
+.color:nth-child(2) {
+    box-shadow: 0 0 115px rgba(148,95,246,.773);
+}
+.color:nth-child(3) {
+    box-shadow: 0 0 115px rgba(55,151,210,.773);
+}
+.color:nth-child(4) {
+    box-shadow: 0 0 115px #ff940a;
+}
+.background-shadow .color {
+    width: 90%;
+    height: 90%;
 }
