@@ -124,7 +124,6 @@
     justify-content: space-between;
     padding: 28px 18px 16px !important;
     border: 1px solid #e2e2e2;
-    box-shadow: 0 2px 40px rgba(0,0,0,.08);
     border-radius: 8px;
 }
 .auth{
@@ -219,11 +218,13 @@
     width: 100%;
     height: 50px;
     color: white;
-    background-color: #2f80ed;
     border-radius: 10px;
     font-style: italic;
     font-weight: 400;
+    background: #648880;
+    background: linear-gradient(to right, #0084ff, #6d77fd, #a514ff);
 }
+
 /* our courses */
 .courses {
     display: flex;
@@ -273,6 +274,26 @@
     background-color: #fff;
     border-radius: 16px;
     position: relative;
+    border: 2px solid #2f80ed;
+}
+.ideal{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px;
+    border-radius: 5px;
+    background: linear-gradient(277deg, #992fed, #2f80ed);
+    color: #fff;
+    width: 250px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    right: 23%;
+    top: 0;
+    transform: translateY(-50%);
 }
 .cardhead{
     display: flex;
@@ -294,12 +315,7 @@
     border-radius: 16px;
     position: relative;
 }
-.card1:hover{
-    border: 2px solid #2f80ed;
-}
-.card2:hover{
-    border: 2px solid #2f80ed;
-}
+
 
 .parabeg{
     display: flex;
